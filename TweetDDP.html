@@ -86,23 +86,21 @@
   <article data-timings="">
     <p><strong>Graph1:</strong> &quot;Total number of tweets by year and month&quot;
 It  performed the calculation of an histogram plot of total number of tweets for the author 
-selected by month and year.</p>
+selected by month and year. </p>
 
-<pre><code>      x &lt;- list(title = &quot;Month and Year&quot;)
-      y &lt;- list(title = &quot;Total number of tweets&quot;)
-      data3&lt;-data2[data2$author==input$Author,]
-      plot_ly(x = ~data3$DateFinal2, type = &quot;histogram&quot;)  %&gt;%
+<p>We use the following plotly code for the calculation:</p>
+
+<pre><code>      plot_ly(x = ~data3$DateFinal2, type = &quot;histogram&quot;)  %&gt;%
       layout(xaxis = x, yaxis = y)
 </code></pre>
 
 <p><strong>Graph2:</strong> &quot;Total number of tweets by year&quot;
 It performed the calculation of an histogram plot of total number of tweets for the author 
-selected by year.</p>
+selected by year. </p>
 
-<pre><code>      x &lt;- list(title = &quot;Year&quot;)
-      y &lt;- list(title = &quot;Total number of tweets&quot;)
-      data3&lt;-data2[data2$author==input$Author,]
-      plot_ly(x = ~year(data3$dateFinal), type = &quot;histogram&quot;) %&gt;%
+<p>We use the following plotly code for the calculation:</p>
+
+<pre><code>      plot_ly(x = ~year(data3$dateFinal), type = &quot;histogram&quot;) %&gt;%
       layout(xaxis = x, yaxis = y)
 </code></pre>
 

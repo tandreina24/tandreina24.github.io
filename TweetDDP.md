@@ -43,21 +43,19 @@ To use the app please select the famous personalitity in the selection box (Auth
 
 **Graph1:** "Total number of tweets by year and month"
 It  performed the calculation of an histogram plot of total number of tweets for the author 
-selected by month and year.
+selected by month and year. 
 
-          x <- list(title = "Month and Year")
-          y <- list(title = "Total number of tweets")
-          data3<-data2[data2$author==input$Author,]
+We use the following plotly code for the calculation:
+
           plot_ly(x = ~data3$DateFinal2, type = "histogram")  %>%
           layout(xaxis = x, yaxis = y)
 
 **Graph2:** "Total number of tweets by year"
 It performed the calculation of an histogram plot of total number of tweets for the author 
-selected by year.
+selected by year. 
 
-          x <- list(title = "Year")
-          y <- list(title = "Total number of tweets")
-          data3<-data2[data2$author==input$Author,]
+We use the following plotly code for the calculation:
+
           plot_ly(x = ~year(data3$dateFinal), type = "histogram") %>%
           layout(xaxis = x, yaxis = y)
 
