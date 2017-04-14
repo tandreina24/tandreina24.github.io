@@ -35,7 +35,7 @@ Also, A breaf data cleaning were preformed to get the format needed, the cleanin
 
 To use the app please select the famous personalitity in the selection box (Author).
 
-![](Appsidebar.png)
+![](https://github.com/tandreina24/tandreina24.github.io/blob/master/Appsidebar.PNG?raw=true)
 
 
 --- .class #id 
@@ -67,7 +67,7 @@ selected by year.
 
 Try the app in the following link: https://andreinatorres.shinyapps.io/TwitterDDP/
 
-![](ApptwitterDDPexample.png)
+![](https://github.com/tandreina24/tandreina24.github.io/blob/master/ApptwitterDDPexample.PNG?raw=true)
 
 Thank you! 
 Andreina Torres
